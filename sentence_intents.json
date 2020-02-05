@@ -1,0 +1,88 @@
+{
+    "intents": [
+        {
+            "tag": "b1.pdf-99",
+            "patterns": [
+                "74 module 3 program control statements critical skill the if statement module 1 introduced the if statement",
+                "it is examined in detail here",
+                "the complete form of the if statement is if condition statement else statement where the targets of the if and else are single statements",
+                "the else clause is optional",
+                "the targets of both the if and else can be blocks of statements",
+                "the general form of the if using blocks of statements is if condition else statement sequence statement sequence if the conditional expression is true the target of the if will be executed otherwise if it exists the target of the else will be executed",
+                "at no time will both of them be executed",
+                "the conditional expression controlling the if must produce a boolean result",
+                "to demonstrate the if and several other control statements we will create and develop a simple computerized guessing game that would be suitable for young children",
+                "in the first version of the game the program asks the player for a letter between a and z",
+                "if the player presses the correct letter on the keyboard the program responds by printing the message right",
+                "the program is shown here guess the letter game",
+                "class guess public static void main string args throws char ch answer k i thinking of a letter between a and z",
+                "can you guess it ch char read a char from the keyboard if ch answer right team ling"
+            ],
+            "responses": [
+                "b1.pdf 99"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "b1.pdf-100",
+            "patterns": [
+                "java a beginner s guide 75 3 s t n e m e a s t t l o r t n o c m a g o r p r this program prompts the player and then reads a character from the keyboard",
+                "using an if statement it then checks that character against the answer which is k in this case",
+                "if k was entered the message is displayed",
+                "when you try this program remember that the k must be entered in uppercase",
+                "taking the guessing game further the next version uses the else to print a message when the wrong letter is picked",
+                "guess the letter game 2nd version",
+                "class guess2 public static void main string args throws char ch answer k i thinking of a letter between a and z",
+                "can you guess it ch char get a char if ch answer right else sorry you wrong",
+                "nested ifs a nested if is an if statement that is the target of another if or else",
+                "nested ifs are very common in programming",
+                "the main thing to remember about nested ifs in java is that an else statement always refers to the nearest if statement that is within the same block as the else and not already associated with an else",
+                "here is an example if i 10 if j 20 a b if k 100 c d else a c this else refers to if k 100 else a d this else refers to if i 10 as the comments indicate the final else is not associated with if j 20 because it is not in the same block even though it is the nearest if without an else",
+                "rather the final else is associated with if i 10",
+                "the inner else refers to if k 100 because it is the closest if within the same block",
+                "team ling"
+            ],
+            "responses": [
+                "b1.pdf 100"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "b1.pdf-101",
+            "patterns": [
+                "76 module 3 program control statements you can use a nested if to add a further improvement to the guessing game",
+                "this addition provides the player with feedback about a wrong guess",
+                "guess the letter game 3rd version",
+                "class guess3 public static void main string args throws char ch answer k i thinking of a letter between a and z",
+                "can you guess it ch char get a char if ch answer right else sorry you a nested if if ch answer too low else too high a sample run is shown here i thinking of a letter between a and z",
+                "can you guess it z sorry you too high the ladder a common programming construct that is based upon the nested if is the ladder",
+                "it looks like this if condition statement else if condition statement else if condition statement team ling"
+            ],
+            "responses": [
+                "b1.pdf 101"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "b1.pdf-102",
+            "patterns": [
+                "",
+                "",
+                "",
+                "else statement java a beginner s guide 77 3 s t n e m e a s t t l o r t n o c m a g o r p r the conditional expressions are evaluated from the top downward",
+                "as soon as a true condition is found the statement associated with it is executed and the rest of the ladder is bypassed",
+                "if none of the conditions is true the final else statement will be executed",
+                "the final else often acts as a default condition that is if all other conditional tests fail the last else statement is performed",
+                "if there is no final else and all other conditions are false no action will take place",
+                "the following program demonstrates the ladder demonstrate an ladder",
+                "class ladder public static void main string args int x for x 6 if x is one else if x is two else if x is three else if x is four else x is not between 1 and 4 this is the default",
+                "the program produces the following output x is not between 1 and 4 x is one x is two x is three x is four x is not between 1 and 4 as you can see the default else is executed only if none of the preceding if statements succeeds",
+                "team ling"
+            ],
+            "responses": [
+                "b1.pdf 102"
+            ],
+            "context_set": ""
+        }
+    ]
+}

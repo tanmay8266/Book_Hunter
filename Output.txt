@@ -1,0 +1,4 @@
+tanmay@latitude-6430u:~/Desktop/Final$ python3 check_similarity.py 
+Enter what you want to search :- In the first version of the game, the program asks the player for a letter between A and Z.
+{0: ['b1.pdf', '99', 1.0, 'Yes'], 1: ['b1.pdf', '100', 0.75, 'No'], 2: ['b1.pdf', '101', 0.75, 'No'], 3: ['b1.pdf', '102', 0.125, 'No']}
+

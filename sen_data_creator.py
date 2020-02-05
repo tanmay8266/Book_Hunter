@@ -76,7 +76,7 @@ def synonyms_of_word(word):
 
 
 try:
-    with open("intents.json","rb") as f:
+    with open("sentence_intents.json","rb") as f:
         dataset = json.load(f)
         print(dataset)
 
@@ -87,18 +87,21 @@ try:
             os.system(command)
             content = open("temp.txt",'r')
             content = content.read()
-            
-            cleaned_content = primary_clean(content)
-            final_content = stop_and_stem(cleaned_content)
-            page_dataset = get_synonyms(final_content)
+
+            sent_token_list = sent_tokenize(content)
+            final_cleaned_list = []
+            for z in sent_token_list:
+                cleaned_content = sentence_extract(z)
+                final_cleaned_list.append(cleaned_content)
             
             tag_var = book_name+'-'+str(i)
-            patterns = page_dataset
+            patterns = final_cleaned_list
             responses =  [book_name+' '+str(i)]
+            temp_dict = {'tag':tag_var,'patterns':patterns,'responses':responses,'context_set':""}
 
-            temp_dict = {'tag':tag_var,'patterns':list(page_dataset),'responses':responses,'context_set':""}
             print(temp_dict)
             dataset['intents'].append(temp_dict)
+
 
 except:
     dataset = {"intents":[]}
@@ -109,19 +112,22 @@ except:
         os.system(command)
         content = open("temp.txt",'r')
         content = content.read()
-        cleaned_content = primary_clean(content)
-        final_content = stop_and_stem(cleaned_content)
-        page_dataset = get_synonyms(final_content)
+
+        sent_token_list = sent_tokenize(content)
+        final_cleaned_list = []
+        for z in sent_token_list:
+            cleaned_content = sentence_extract(z)
+            final_cleaned_list.append(cleaned_content)
         
         tag_var = book_name+'-'+str(i)
-        patterns = page_dataset
+        patterns = final_cleaned_list
         responses =  [book_name+' '+str(i)]
-        temp_dict = {'tag':tag_var,'patterns':list(page_dataset),'responses':responses,'context_set':""}
+        temp_dict = {'tag':tag_var,'patterns':patterns,'responses':responses,'context_set':""}
 
         print(temp_dict)
         dataset['intents'].append(temp_dict)
 
-with open("intents.json","w") as f:
+with open("sentence_intents.json","w") as f:
     json.dump(dataset,f,ensure_ascii = False, indent = 4)
 
     #     big_stuff+=str(i)+","
