@@ -1,0 +1,18 @@
+About the Author
+
+Herbert Schildt is the world’s leading programming author.
+He is an authority on the C, C++, Java, and C# languages,
+and he is a master Windows programmer. His programming
+books have sold more than 3 million copies worldwide and
+have been translated into all major languages. He is the author
+of numerous bestsellers, including Java: The Complete
+Reference, C++: The Complete Reference, C: The Complete
+Reference, and C#: The Complete Reference, and he is the
+co-author of The Art of Java. Schildt holds both graduate and
+undergraduate degrees from the University of Illinois. He can
+be reached at his consulting office at (217) 586-4683. His Web
+site is www.HerbSchildt.com.
+
+Copyright © 2005 The McGraw-Hill Companies. Click here for terms of use.
+
+TEAM LinG
