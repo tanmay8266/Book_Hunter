@@ -1,0 +1,25 @@
+{
+    "intents": [
+        {
+            "tag": "b1.pdf-1",
+            "patterns": [
+                "team",
+                "ling"
+            ],
+            "responses": [
+                "b1.pdf 1"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "b2.pdf-1",
+            "patterns": [
+                "teamfli"
+            ],
+            "responses": [
+                "b2.pdf 1"
+            ],
+            "context_set": ""
+        }
+    ]
+}
