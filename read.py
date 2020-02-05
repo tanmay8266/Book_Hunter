@@ -73,9 +73,5 @@ print(dataset)
 #     big_stuff+=str(i)+","
 # print(big_stuff[:len(big_stuff)-1])
 # command = "pdf2txt.py -p "+big_stuff[:len(big_stuff)-1]+" ~/b1.pdf"
-
-
-
-
-
+#checking
 

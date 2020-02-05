@@ -38,7 +38,7 @@ except:
         return len(set1.intersection(set2)) / len(set2)
 
     def get_synonyms(inp_list):
-        inp_list = [set(inp_list)]
+        inp_list = list(set(inp_list))
         synonyms = set([])
         for i in inp_list:
             print(i)

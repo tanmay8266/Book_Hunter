@@ -1,18 +1,102 @@
-About the Author
+.
+.
+.
+else
 
-Herbert Schildt is the world’s leading programming author.
-He is an authority on the C, C++, Java, and C# languages,
-and he is a master Windows programmer. His programming
-books have sold more than 3 million copies worldwide and
-have been translated into all major languages. He is the author
-of numerous bestsellers, including Java: The Complete
-Reference, C++: The Complete Reference, C: The Complete
-Reference, and C#: The Complete Reference, and he is the
-co-author of The Art of Java. Schildt holds both graduate and
-undergraduate degrees from the University of Illinois. He can
-be reached at his consulting office at (217) 586-4683. His Web
-site is www.HerbSchildt.com.
+statement;
 
-Copyright © 2005 The McGraw-Hill Companies. Click here for terms of use.
+Java: A Beginner’s Guide
+
+77
+
+3
+
+s
+t
+n
+e
+m
+e
+a
+S
+
+t
+
+t
+
+l
+
+o
+r
+t
+n
+o
+C
+m
+a
+g
+o
+r
+P
+
+r
+
+The conditional expressions are evaluated from the top downward. As soon as a true condition
+is found, the statement associated with it is executed, and the rest of the ladder is bypassed. If
+none of the conditions is true, the final else statement will be executed. The final else often
+acts as a default condition; that is, if all other conditional tests fail, the last else statement is
+performed. If there is no final else and all other conditions are false, no action will take place.
+
+The following program demonstrates the if-else-if ladder:
+
+// Demonstrate an if-else-if ladder.
+class Ladder {
+
+public static void main(String args[]) {
+
+int x;
+
+for(x=0; x<6; x++) {
+
+if(x==1)
+
+System.out.println("x is one");
+
+else if(x==2)
+
+System.out.println("x is two");
+
+else if(x==3)
+
+System.out.println("x is three");
+
+else if(x==4)
+
+System.out.println("x is four");
+
+else
+
+System.out.println("x is not between 1 and 4");
+
+This is the
+default statement.
+
+}
+
+}
+
+}
+
+The program produces the following output:
+
+x is not between 1 and 4
+x is one
+x is two
+x is three
+x is four
+x is not between 1 and 4
+
+As you can see, the default else is executed only if none of the preceding if statements
+succeeds.
 
 TEAM LinG
